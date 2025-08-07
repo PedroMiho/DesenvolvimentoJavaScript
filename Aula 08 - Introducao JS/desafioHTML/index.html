@@ -5,27 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página com Gradient</title>
   <style>
+    /* Reseta as margens e padding do body */
     body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;  
-        height: 100vh;
-        background-image: linear-gradient(to bottom, #00D7FE, #019CDF, #0081CF);
-
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh; /* Ocupa toda a altura da tela */
+      background-image: linear-gradient(to bottom, #00D7FE, #019CDF, #0081CF);
+      overflow: hidden; /* Impede a criação de barra de rolagem */
     }
 
+    /* Centraliza o main */
     main {
-        background: #ffffffcc; /* Fundo branco semi-transparente */
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        width: 100%;
-        max-width: 400px;
-        text-align: center;
+     margin: 150px auto;
+      background: #ffffffcc; /* Fundo branco semi-transparente */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
     }
 
     h2 {
