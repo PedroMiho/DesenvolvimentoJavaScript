@@ -31,7 +31,7 @@
       margin-bottom: 20px;
     }
 
-    input, select {
+    input, select{
       display: block;
       width: 100%;
       text-indent: 10px;
@@ -67,12 +67,17 @@
 <body>
 
   <main>
-    <h2>DESAFIO 01</h2>
+    <h2>MÉTODOS DE PAGAMENTO</h2>
 
-    <input type="number" id="numero" placeholder="Digite a sua nota">
+    <input type="number" id="valorGasto" placeholder="Digite o valor da compra">
+    <select id="metodoPagamento">
+      <option value="1">Boleto/Pix - 10% de Desconto</option>
+      <option value="2">Crédito</option>
+    </select>
     
     <input type="submit" onclick="mostrarResultado()" value="Enviar">
-    <p id="antecessor">O resultado aparecerá aqui.</p>
+
+    <p id="resultado">O resultado aparecerá aqui.</p>
   </main>
 
   <script src="script.js"></script>
